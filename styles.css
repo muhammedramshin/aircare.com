@@ -111,17 +111,29 @@ p{
 .contact ul{
 
 list-style: none;
+font-size: 14px;
 
 }
 
-.contact ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #C4C4C4; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+.contact ul li:before {
+
+    content: '';
+  
+    display: inline-block;
+  
+    height: 10px;
+  
+    width: 10px;
+  
+     background-size: 10px;
+  
+    background-image: url("assets/circle.png");
+  
+    background-repeat: no-repeat;
+  
+    margin-right: 5px;
+}  
+
 /* .circle{
     background-color: tomato;
     width: 18px;
