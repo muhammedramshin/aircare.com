@@ -5,9 +5,7 @@ body{
     font-family: 'Avenir' !important;
     margin: auto;
 }
-.navbar{
 
-}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto'  !important;
 }
@@ -19,6 +17,7 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: 'Avenir' !important;
     font-size: 14px;
+    line-height: 20.5px;
 }
 
 .nav-items ul{
@@ -98,6 +97,14 @@ p{
 .s4-foot ul{
     list-style: none;
     padding: 0px;
+}
+.s4-foot ul li{
+  
+    padding-top: 6px;
+}
+.s4-foot .contact ul li{
+  
+    padding-top: 15px;
 }
 .s4-foot h5{
    text-align: left;
