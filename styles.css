@@ -1,0 +1,124 @@
+
+
+body{
+    font-family: 'Roboto'  !important;
+    margin: auto;
+}
+.navbar{
+
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-items ul{
+    display: inline-flex;
+    list-style: none;
+    padding-top: 5px;
+}
+
+.nav-items li{
+    padding: 5px 15px ;
+}
+.text-blue{
+    color:#35BACD;
+}
+.nav-right{
+    display: flex;
+}
+.btn-blue-top{
+   background-color: #35BACD!important;
+   color: white;
+   border-color:#35BACD!important; 
+   padding: 8px 14px !important;
+   height: 40px;
+}
+.btn-blue{
+   background-color: #35BACD!important;
+   color: white;
+   border-color:#35BACD!important; 
+   
+}
+.btn-blue-inverse{
+    background-color: white  !important;
+    color: #35BACD!important;
+    border-color:#35BACD!important;
+}
+
+.bg-1{
+    background-image: url(assets/bg-1.png);
+    background-size: 100% 100%;
+}
+.s1-text{
+    transform: translateY(63%);
+}
+.s1-hover-white{
+    /* background-color: white; */
+    height: 600px;
+    position: absolute;
+    /* opacity: 0.8; */
+    background-image: linear-gradient(to right, white , transparent,white);
+}
+.bg-3{
+    background-image: url(assets/s3-bg-1.png);
+    background-size: 100% 100%;
+
+    height: auto;
+    min-height: 350px;
+    border-radius: 10px;
+}
+
+.s3-txt-rw{
+    transform: translate(4%,25%);
+    color: white;
+    font-size: 14px;
+}
+.s4-foot ul{
+    list-style: none;
+    padding: 0px;
+}
+.s4-foot h5{
+   text-align: left;
+}
+.social{
+    text-align: end;
+}
+.ico{
+    padding-left: 8px;
+}
+
+
+.sidebar{
+    z-index: 999;
+    background-color: #35bacd;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+
+    transform: translateX(-100%);
+    transition: transform 1.5 ease-out;
+}
+.sidebar.active{
+    transform: translateX(0%);
+}
+.btn-bars{
+    display: none;
+}
+.btn-close{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.sidebar-items{
+    padding: 10px 5px;
+}
