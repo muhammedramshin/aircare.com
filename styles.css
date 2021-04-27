@@ -92,6 +92,9 @@ p{
     color: white;
     font-size: 14px;
 }
+.s4-foot{
+    color:#5B7284;
+}
 .s4-foot ul{
     list-style: none;
     padding: 0px;
@@ -105,6 +108,26 @@ p{
 .ico{
     padding-left: 8px;
 }
+.contact ul{
+
+list-style: none;
+
+}
+
+.contact ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #C4C4C4; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+/* .circle{
+    background-color: tomato;
+    width: 18px;
+    border-radius: 15px;
+    height: 18px;
+} */
 
 
 .sidebar{
