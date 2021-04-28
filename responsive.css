@@ -20,6 +20,17 @@
         font-size: 14px;
         padding: 20px;
     }
+
+
+
+    /* book modal */
+
+    .modal-content{
+        padding: 2px!important;
+    }
+
+
+
  }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
