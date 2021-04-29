@@ -30,6 +30,16 @@
     }
 
 
+    /* package */
+
+    .s1-text-abt{
+        transform: translate(0%,0%);
+        font-size: 10px;
+    }
+    .s1-text-abt p{ 
+        font-size: 10px;
+       
+    }
 
  }
 

@@ -5,6 +5,10 @@ body{
     font-family: 'Avenir',Sans-Serif !important;
     margin: auto;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto'  !important;
@@ -231,4 +235,151 @@ font-size: 14px;
 
   .s1-text-abt{
       transform: translateY(38%);
+  }
+
+
+
+  /* package page */
+
+.card{
+    border-radius: 21px  !important;
+    box-shadow: 0px 8px 28px rgb(0 0 0 / 9%) !important;
+    border: none !important;
+    margin-left: 10px !important;
+
+}
+
+.card-body p{
+    color: #272727  !important;
+}
+.out-btn-join{
+    text-align: center;
+    margin: auto;
+}
+
+.membership{
+    padding: 30px !important;
+    margin: 4% !important;
+}
+
+
+.btn-join{
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    color: white;
+    background-color: #35BACD;
+    border: none;
+    /* width: 203px; */
+    padding: 10px 26px;
+}
+  
+ .ribbon {padding-left:50px}  
+ .ribbon-background {
+     position: absolute; 
+     top: 0; right: 0; 
+     font-size:8px; 
+     color: #cccccc; 
+    }  
+ .ribbon-background a {
+     color: #cccccc; 
+     text-decoration:none; 
+     font-weight:normal; 
+    }  
+ .ribbon-background a:hover {
+     color: #cccccc; 
+     text-decoration:none; 
+     font-weight:normal; 
+    }  
+ .theribbon{
+    border-radius: 12px 21px 9px 0px;
+     position: relative;
+     width: 250px;
+     font-size: 15px;
+     font-weight: 500;
+     padding: 6px 20px 6px 38px;
+     margin: 30px 10px 10px -71px;
+     color: #ffffff;
+     background-image: linear-gradient(#30D2DF,#3EB9DB);
+     text-shadow: 0px 1px 2px #bbb;
+     /* -webkit-box-shadow: 0px 2px 4px #888;
+     -moz-box-shadow: 0px 2px 4px #888;
+     box-shadow: 0px 2px 4px #888; */
+    }  
+ .theribbon:before, .theribbon:after {content: ' ';position: absolute;width: 0;height: 0;}  
+ .theribbon:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    transform: skew(-18deg, -7deg);
+    right: -9px;
+    border-top: 45px solid white;
+    border-left: 27px solid #ffff0000;
+    width: 0;
+ }  
+.theribbon:after{
+    left: 0px;
+    top: 100%;
+    border-width: 5px 10px;
+    border-style: solid;
+    border-color: #000000 #000000 transparent transparent;
+}  
+
+
+.single-item{
+
+}
+.dot-circle{
+    height: 14px;
+    width: 14px;
+    border-radius: 15px;
+    background-color: #31D0DF;
+    display: inline-flex;
+    margin-right: 5px;
+    
+}
+
+.item-list{
+    font-size: 14px;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+
+/* membership forms */
+
+.line{
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 15px;
+}
+.line:after{
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 46%;
+}
+.line:before{
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 46%;
+}
+
+.line:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .line:after {
+    left: 0.5em;
+    margin-right: -50%;
   }
