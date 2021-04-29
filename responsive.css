@@ -40,6 +40,12 @@
         font-size: 10px;
        
     }
+    .btn-user{
+     display: none;
+    }
+    .user-acc{
+        display: none;
+    }
 
  }
 

@@ -17,20 +17,7 @@
             const sidebar = document.querySelector(".sidebar");
             sidebar.classList.toggle("active");
         }
-        function visible(){
-            let b = document.getElementById('tooltipMenu');
-            // document.getElementById(id).style.property = new style
-            
-
-            if(b.style.visibility === "visible"){
-                b.style.visibility = "hidden";
-            }
-            else{
-                b.style.visibility = "visible"
-            }
-          
-
-        }
+        
     </script>
 </head>
 <body>
@@ -45,10 +32,6 @@
     <div class="sidebar-items">About Us</div>
     <div class="sidebar-items">Medical Facilities</div>
     <div class="sidebar-items">Media</div>
-    <div class="sidebar-items">Account</div>
-    <div class="sidebar-items">My Trips</div>
-    <div class="sidebar-items">Coustomer Services</div>
-    <div class="sidebar-items">Logout</div>
 </div>
 
     <div class="navbar px-0">
@@ -68,19 +51,7 @@
                 </ul>
             
             </div>
-            <button class="btn btn-primary btn-blue-top" onclick="window.location.href='package.html'">Join as a Member</button>
-            <div class="user-acc">
-                <button class="btn-user " onclick="visible()"><img src="assets/user.png"  width="28px" height="28px" alt=""></button>
-                <div class="tooltipMenu" id="tooltipMenu">
-                    <ul>
-                      <li>Account</li>
-                      <li>My Trips</li>
-                      <li>Coustomer Services</li>
-                      <li>Logout</li>
-                    </ul>
-                </div>
-            </div>
-              <!---------------------tooltip Menu Ends---------------------->
+           <button class="btn btn-primary btn-blue-top" onclick="window.location.href='package.html'">Join as a Member</button>
         </div>
 
     </div>
@@ -88,98 +59,106 @@
 
 
 
+<div class="container my-5">
 
 
-<div class="container-fluid s1-hover-white"></div>
-<div class="container-fluid bg-1" style="height: 600px;">
-   
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-12 mt-4 s1-text">
-    
-                <h2 style="font-weight: 700;">
-                    <span class="text-blue">Build Fast</span> Digital<br> Experiences, Faster
-                </h2>
-                <p>Visually build and optimize digital experiences on any tech stack. No coding required, and developer approved.</p>
-    
-                <div class="action-buttons my-4">
-                    <button class="btn btn-primary btn-blue-inverse mx-2 my-2"><span style="color: black;">HELPLINE :</span> (406) 555-0120</button>
-                    <button class="btn btn-primary btn-blue mx-2"  data-toggle="modal" data-target="#book"  >BOOK</button>
+<div class="row">
+    <div class="col-md-4 cols-sm-12">
+
+        <div class="user-card">
+            <div class="user-card-body">
+
+                <div class="user-image">
+                    <img src="assets/account/userpic.png" width="124px" alt="">
                 </div>
-    
-            </div>
-            <div class="col-lg-7 col-md-7 col-sm-12">
-    
+
+                <div class="user-name-tag">
+                    Savanna jacob
+                </div>
+
+
+                <div class="user-info">
+                    <ul>
+                        <li>(671) 575-2221 </li>
+                        <li>chambers@gmail.com</li>
+                        <li>2972 Westheimer Rd. Santa Ana, Illinois 85486</li>
+                    </ul>
+                </div>
+
+                    <button class="user-edit-btn">
+                        <img src="assets/account/pencil.png" width="12px" alt="">
+                    </button>
+
             </div>
         </div>
+
+
+    </div>
+    <div class="col-md-8 cols-sm-12">
+        <div class="user-card">
+            <div class="user-card-body">
+
+
+                <ul class="nav nav-tabs user-tab">
+                    <li class="active"><a data-toggle="tab" href="#home">Travel History </a></li>
+                    <li><a data-toggle="tab" href="#menu1"> Payment History</a></li>
+                    <li><a data-toggle="tab" href="#menu2"> Membarship</a></li>
+                  
+                  </ul>
+                
+                    <div class="tab-content">
+
+                        <div id="home" class="tab-pane fadein active">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="travel-item">
+                                    testlkl
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <div id="menu1" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <div id="menu2" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+
+
+                    </div>
+
+
+             </div>
+
+
+
+         </div>
+         </div>       
+
     </div>
 </div>
 
 
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <img src="assets/s2-helicopter.png" width="100%" height="auto" alt="aircare">
-        </div>
-        <div class="col-lg-8 col-md-6 col-sm-12 s2-text">
-            <h4>
-                <span class="text-blue">Professional Medical Flight Services</span>
-            </h4>
-            <p style="font-size: 14px; color:#5B7284;">
-                With over 20 plus years in the business of Charters, we know what we are talking about and doing.
-                 Dedicated to medical Air Transportation, our Air Ambulance wing has saved the lives of millions.
-                Our jets are 24/7 available for Emergency Air Ambulance Service. We provides Helicopters and flying both for evacuation. 
-                Helicopters are for short distance travel and flying jets serves fast service which moves patients for long distance locations.
-                We cover various states of India and neighbour countries to India as well for patients coming to India from neighbouring countries. 
-                Feel free to contact us at +91-98718-01826. Equipped with state of the art medical facilities, our air ambulance wing pledges to save as many lives as possible just like it has in the past.With over 20 plus years in the business of Charters, we know what we are talking about and doing. Dedicated to medical Air Transportation, our Air Ambulance wing has saved the lives of millions. Our jets are 24/7 available for Emergency Air Ambulance Service. We provides Helicopters and flying both for evacuation. Helicopters are for short distance travel and flying jets serves fast service which moves patients for long distance locations.
-                We cover various states of India and neighbour countries to India as well for patients coming to India from neighbouring countries.
-                Feel free to contact us at +91-98718-01826. Equipped with state of the art medical facilities, 
-                our air ambulance wing pledges to save as many lives as possible just like it has in the past.
-            </p>
-        </div>
-    </div>
+
+
 </div>
 
 
-<div class="container bg-3 my-5">
-    <div class="row">
-        <div class="col-lg-8 col-sm-11 s3-txt-rw">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <h5><img src="assets/heart.png" width="40px" height="auto" alt=""> Order Ahead</h5>
-                    <p>
-                        Visually build and optimize digital experiences on any tech stack. No coding required, and developer approved.
-                    </p>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <h5> <img src="assets/heart.png" width="40px" height="auto" alt=""> Order Ahead</h5>
-                    <p>
-                        Visually build and optimize digital experiences on any tech stack. No coding required, and developer approved.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <h5> <img src="assets/heart.png" width="40px" height="auto" alt=""> Order Ahead</h5>
-                    <p>
-                        Visually build and optimize digital experiences on any tech stack. No coding required, and developer approved.
-                    </p>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <h5> <img src="assets/heart.png" width="40px" height="auto" alt=""> Order Ahead</h5>
-                    <p>
-                        Visually build and optimize digital experiences on any tech stack. No coding required, and developer approved.
-                    </p>
-                </div>
-            </div>
 
-        </div>
 
-        <div class="col-lg-4 col-sm-1 "></div>
-    </div>
 
-</div>
+
+
+
 
 
 
@@ -266,7 +245,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Name" id="">
+                            <input type="text" name="name" placeholder="name" id="">
                         </div>
                     </div>
                 </div>
@@ -275,12 +254,12 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="number" name="name" placeholder="Contact number" id="">
+                            <input type="number" name="name" placeholder="contact number" id="">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Email" id="">
+                            <input type="email" name="email" placeholder="email" id="">
                         </div>
                     </div>
                 </div>
