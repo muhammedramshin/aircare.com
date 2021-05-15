@@ -1,6 +1,17 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
 
+    .top-header{
+        background-color: #35BACD;
+        height: 40px;
+        color: white;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
     .nav-items{
         display: none;
     }
@@ -47,6 +58,36 @@
         display: none;
     }
 
+    .tab-content{
+        overflow-x: scroll;
+    }
+    .travel-item-p2{
+        padding-left: 32px !important;
+
+    }
+    .travel-item-dot-1 {
+        height: 14px;
+        width: 14px;
+        left: 13px;
+        position: absolute;
+        border-radius: 15px;
+        background-color: #66C0FD;
+    }
+    .travel-item-dot-2 {
+        height: 14px;
+        width: 14px;
+        left: 13px;
+        position: absolute;
+        border-radius: 15px;
+        background-color: #21013E;
+    }
+    #borderLeft {
+        border-left: 2px dotted black;
+        position: absolute;
+        top: 1%;
+        bottom: 49%;
+        left: 19px;
+    }
  }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -9,7 +9,18 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.top-header{
+    background-color: #35BACD;
+    height: 40px;
+    color: white;
+    display: flex;
+        align-items: center;
+        justify-content: center;
 
+}
+.top-header-items{
+   
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto'  !important;
 }
@@ -201,6 +212,11 @@ font-size: 14px;
 .bookform input{
     width: 100%;
     padding: 10px;
+    border: 1px solid #A0A0A0;
+}
+.bookform select{
+    width: 100%;
+    padding: 12px;
     border: 1px solid #A0A0A0;
 }
 .btn-book{
@@ -441,6 +457,47 @@ display: flex;
     padding: 20px 0px;
 }
 
+.prev-table{
+    padding: 5px;
+}
+.prev-table tr{
+    padding: 5px;
+}
+.prev-table th{
+    background: linear-gradient(
+90.28deg
+, #35BACD 0%, rgba(53, 205, 169, 0.66) 99.9%);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+
+}
+.prev-table td{
+    padding: 5px 15px;
+    border: 1px solid #30D2DF;
+}
+
+
+
+.prev-table1{
+    padding: 5px;
+}
+.prev-table1 tr{
+    padding: 5px;
+}
+.prev-table1 th{
+    background: linear-gradient(90.28deg, #A9A9A9 0%, rgba(188, 188, 188, 0.66) 99.9%);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+
+}
+.prev-table1 td{
+    padding: 5px 15px;
+    border: 1px solid #C8C8C8;
+}
 
 
 
@@ -449,10 +506,9 @@ display: flex;
 
 /* account  */
 .user-card{
-    border-radius: 21px !important;
-    box-shadow: 0px 8px 28px rgb(0 0 0 / 9%) !important;
-    border: none !important;
-    margin-left: 10px !important;
+    border-radius: 5px !important;
+    border: 1px solid #C4C4C4;
+    /* margin-left: 10px !important; */
     width: 100%;
     min-height: 417px;
 }
@@ -587,12 +643,12 @@ color: white;
 
 /* menu 3 */
 .membership-card-outer{
-    margin-right: 50px;
+    
 }
 .membership-card{
     border-radius: 8px;
     border: 1px solid #35BACD;
-    min-width: 210px;
+    min-width: 100%;
     min-height: 129px;
     margin-top: 20px;
 }
@@ -633,4 +689,32 @@ color: white;
     font-size: 12px;
     color: #5B7284;
 
+}
+
+.email-card{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 250px;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    width: 70%;
+    min-width: 300px;
+    padding: 40px;
+}
+
+.addmember{
+    display: flex;  
+justify-content: center;  
+align-items: center;  
+}
+
+.btn-add-mem{
+    border: none;
+    background: white;
+    font-size: 56px;
+    color: #999999;
+    font-weight: 100;
 }
