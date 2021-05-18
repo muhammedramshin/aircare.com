@@ -724,6 +724,34 @@ align-items: center;
 }
 
 
+.ribbon-bookmark-v {
+    text-align: center;
+    --tor-ribbon-polygon: polygon(0% 0%, 100% 0%, 100% 100%, 30px calc(100% - 1em), 0% 100%);
+    -webkit-clip-path: var(--tor-ribbon-polygon);
+    clip-path: var(--tor-ribbon-polygon);
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 60px;
+    height: calc(var(--tor-ribbon-size) + 1em);
+    padding-bottom: 1em;
+    --tor-ribbon-size: 3em;
+    color: #fff;
+    position: absolute;
+    left: 16px;
+    top: 0;
+    background: linear-gradient(
+45deg
+, #2BABBD, #66C0FD);
+    flex-direction: column;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+
+
+
+/* logo modaall.................... */
+
+
 
 .login-form{
 
