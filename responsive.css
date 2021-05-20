@@ -25,6 +25,9 @@
     .bg-3{
         height: auto !important;
     }
+    .bg-3-cover{
+        height: auto !important;
+    }
     .s3-txt-rw{
         transform: translate(0%,0%);
         color: white;

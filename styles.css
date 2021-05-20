@@ -88,7 +88,9 @@ p{
 
 .bg-1{
     background-image: url(assets/bg-1.png);
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 65% 100%;
+    background-position: 100%;
 }
 .bg-1-media{
     background-image: url(assets/media/mediachoper.png);
@@ -110,11 +112,19 @@ p{
 }
 .bg-3{
     background-image: url(assets/s3-bg-1.png);
-    background-size: 100% 100%;
-
+    background-size: 60% 100%;
     height: auto;
+    background-repeat: no-repeat;
     min-height: 350px;
     border-radius: 10px;
+    background-position: 100%;
+}
+.bg-3-cover{
+    min-height: 350px;
+    position: absolute;
+    background: linear-gradient(to right, #2BABBD 50%, transparent);
+    height: auto;
+    border-radius: 9px;
 }
 
 .s3-txt-rw{
