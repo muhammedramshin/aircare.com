@@ -55,17 +55,18 @@ p{
     border: none;
     outline: none;
     width: 30px;
+    padding-bottom: 10px;
     vertical-align: super;
     margin-left: 21px;
 }
 .btn-blue-top{
-   background-color: #35BACD!important;
-   color: white;
-   border-color:#35BACD!important; 
-   padding: 8px 14px !important;
-   height: 40px;
-   font-size: 14px !important;
-   border-radius: 8px!important;
+    background-color: #ffffff!important;
+    color: #35bacd !important;
+    border-color: #35bacd!important;
+    padding: 8px 14px !important;
+    height: 40px;
+    font-size: 14px !important;
+    border-radius: 8px!important;
 }
 .btn-blue{
    background-color: #35BACD!important;
@@ -94,11 +95,16 @@ p{
 }
 .bg-1-media{
     background-image: url(assets/media/mediachoper.png);
-    background-size: 100% 100%;
+    background-size: 70% 100%;
+    background-position: 100%;
 }
+    background-repeat: no-repeat;
 .bg-1-medical{
     background-image: url(assets/medicalfacilities/medicalfacilities.png);
-    background-size: 100% 100%;
+    background-size: 70% 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+
 }
 .s1-text{
     transform: translateY(63%);

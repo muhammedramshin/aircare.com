@@ -16,6 +16,19 @@
         function toggle(){
             const sidebar = document.querySelector(".sidebar");
             sidebar.classList.toggle("active");
+        } function visible(){
+            let b = document.getElementById('tooltipMenu');
+            // document.getElementById(id).style.property = new style
+            
+
+            if(b.style.visibility === "visible"){
+                b.style.visibility = "hidden";
+            }
+            else{
+                b.style.visibility = "visible"
+            }
+          
+
         }
     </script>
 </head>
@@ -58,17 +71,30 @@
             <img src="assets/logo.png" width="100px" height="auto" alt="logo">
         </div>
 
-        <div class="nav-right">
+       <div class="nav-right">
             <div class="nav-items ">
                 <ul>
-                    <li>About Us</li>
-                     <li onclick="window.location.href='package.html'">Medical Facilities</li>
+                    <li onclick="window.location.href='package.html'">Info</li>
+                     <li onclick="window.location.href='medicalfacilities.html'">Medical Facilities</li>
                      <li onclick="window.location.href='media.html'">Media</li>
                 </ul>
             
             </div>
-           <button class="btn btn-primary btn-blue-top" onclick="window.location.href='package.html'">Join as a Member</button>
+            <button class="btn btn-primary btn-blue-top" onclick="window.location.href='package.html'">Join as a Member</button>
+            <div class="user-acc">
+                <button class="btn-user " onclick="visible()"><img src="assets/user.png"  width="28px" height="28px" alt=""></button>
+                <div class="tooltipMenu" id="tooltipMenu">
+                    <ul>
+                      <li onclick="window.location.href='account.html'">Account</li>
+                      <li>My Trips</li>
+                      <li>Coustomer Services</li>
+                      <li>Logout</li>
+                    </ul>
+                </div>
+            </div>
+              <!---------------------tooltip Menu Ends---------------------->
         </div>
+
 
     </div>
 </div>  
