@@ -90,6 +90,14 @@ p{
     background-image: url(assets/bg-1.png);
     background-size: 100% 100%;
 }
+.bg-1-media{
+    background-image: url(assets/media/mediachoper.png);
+    background-size: 100% 100%;
+}
+.bg-1-medical{
+    background-image: url(assets/medicalfacilities/medicalfacilities.png);
+    background-size: 100% 100%;
+}
 .s1-text{
     transform: translateY(63%);
 }
@@ -116,6 +124,7 @@ p{
 }
 .s4-foot{
     color:#5B7284;
+    margin-top: 120px;
 }
 .s4-foot ul{
     list-style: none;
@@ -748,6 +757,18 @@ align-items: center;
 }
 
 
+.btn-chg-pass{
+    background-color: white;
+    border: 1px solid #2BABBD;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #2BABBD;
+    margin: auto;
+    display: block;
+    padding: 5px;
+    width: 90%;
+}
+
 
 /* logo modaall.................... */
 
@@ -801,4 +822,18 @@ margin-top: 15px;
     text-align: center;
     margin: 15px 0px;
     
+}
+
+
+/* medical fecilities.................. */
+
+
+.img-label{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    bottom: 35px;
+    width: 70%;
+    left: 30px;
+    font-size: 20px;
 }
