@@ -125,12 +125,17 @@ p{
     border-radius: 10px;
     background-position: 100%;
 }
+.bg-3-container{
+    position: relative;
+}
 .bg-3-cover{
     min-height: 350px;
     position: absolute;
     background: linear-gradient(to right, #2BABBD 50%, transparent);
-    height: auto;
+    
     border-radius: 9px;
+    height: 100% !important;
+    width: 90%;
 }
 
 .s3-txt-rw{
@@ -807,6 +812,7 @@ align-items: center;
 
 .login-content{
     background-color: white;
+    border-radius: 0px !important;
 }
 
 
