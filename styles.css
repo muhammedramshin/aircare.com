@@ -586,6 +586,9 @@ color: #5B7284;
     border: none;
     width: 26px;
 }
+.nav-tabs {
+    width: max-content !important;
+}
 .user-tab li{
     padding: 0px 10px;
     
@@ -593,10 +596,15 @@ color: #5B7284;
 
 .user-tab li a{
    color: #000;
+   padding-bottom: 4px;
 
 }
-.a:active{
-   border-bottom:1px solid #2BABBD;
+.user-tab li a:hover{
+   text-decoration: none !important;
+
+}
+a.active{
+   border-bottom:3px solid #2BABBD;
 
 }
 .travel-item{
