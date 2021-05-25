@@ -21,6 +21,12 @@ a{
 .top-header-items{
    
 }
+.second-header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto'  !important;
 }
@@ -51,7 +57,7 @@ p{
     display: flex;
 }
 .btn-user{
-    background-color: white;
+    background-color: #ffffff00;
     border: none;
     outline: none;
     width: 30px;
@@ -97,8 +103,9 @@ p{
     background-image: url(assets/media/mediachoper.png);
     background-size: 70% 100%;
     background-position: 100%;
-}
     background-repeat: no-repeat;
+}
+    
 .bg-1-medical{
     background-image: url(assets/medicalfacilities/medicalfacilities.png);
     background-size: 70% 100%;
@@ -115,6 +122,34 @@ p{
     position: absolute;
     /* opacity: 0.8; */
     background-image: linear-gradient(to right, white 35%, transparent,white);
+}
+.s1-hover-white-media{
+    /* background-color: white; */
+    height: 550px;
+    position: absolute;
+    /* opacity: 0.8; */
+    background-image: linear-gradient(to right, white 35%, transparent);
+}
+.s1-hover-white-medical{
+    /* background-color: white; */
+    height: 550px;
+    position: absolute;
+    /* opacity: 0.8; */
+    background-image: linear-gradient(to right, white 35%, transparent);
+}
+.s1-hover-white-bottom{
+    /* background-color: white; */
+    height: 550px;
+    position: absolute;
+    /* opacity: 0.8; */
+    background-image: linear-gradient( transparent 65%,white  );
+}
+.s1-hover-white-package{
+    /* background-color: white; */
+    height: 550px;
+    position: absolute;
+    /* opacity: 0.8; */
+    background-image: linear-gradient(to right, white 35%, transparent);
 }
 .bg-3{
     background-image: url(assets/s3-bg-1.png);
@@ -292,7 +327,7 @@ font-size: 14px;
   /* about page styles */
 
   .s1-text-abt{
-      transform: translateY(38%);
+      transform: translateY(50%);
   }
 
 
@@ -489,6 +524,7 @@ display: flex;
 .tooltipMenu ul li{
     list-style: none;
     padding: 20px 0px;
+    text-align: left;
 }
 
 .prev-table{
