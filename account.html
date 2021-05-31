@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirCare</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"  crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
     <script>
-        function toggle(){
+        function toggle() {
             const sidebar = document.querySelector(".sidebar");
             sidebar.classList.toggle("active");
-        } function visible(){
+        } function visible() {
             let b = document.getElementById('tooltipMenu');
             // document.getElementById(id).style.property = new style
-            
 
-            if(b.style.visibility === "visible"){
+
+            if (b.style.visibility === "visible") {
                 b.style.visibility = "hidden";
             }
-            else{
+            else {
                 b.style.visibility = "visible"
             }
-          
+
 
         }
-        
+
     </script>
 </head>
+
 <body>
 
     <div class="container-fluid top-header px-2 py-2">
@@ -42,450 +47,457 @@
             <span class="ico"><i class="fa fa-instagram" aria-hidden="true"></i></span>
             <span class="ico"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
             <span class="ico"><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-    
-            <span class="ico" style="float: right;"><i class="fa fa-whatsapp" aria-hidden="true"></i> 1-800-555-1234</span> 
-            <span class="ico" style="float: right;"><i class="fa fa-envelope-o" aria-hidden="true"></i> sales@yourwebsite.com</span> 
+
+            <span class="ico" style="float: right;"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                1-800-555-1234</span>
+            <span class="ico" style="float: right;"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                sales@yourwebsite.com</span>
         </div>
-       
+
     </div>
-    
-<div class="container mt-3">
+
+    <div class="container mt-3">
 
 
-<div class="sidebar">
-    <div class="btn-close" onclick="toggle()">
-        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-    </div>
-    <div class="sidebar-items">About Us</div>
-    <div class="sidebar-items">Medical Facilities</div>
-    <div class="sidebar-items">Media</div>
-</div>
-
-    <div class="navbar px-0">
-        <div class="btn-bars fa-2x" onclick="toggle()">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-        <div class="logo" onclick="window.location.href='index.html'">
-            <img src="assets/logo.png" width="100px" height="auto" alt="logo">
-        </div>
-
-       <div class="nav-right">
-            <div class="nav-items ">
-                <ul>
-                    <li onclick="window.location.href='package.html'">Info</li>
-                     <li onclick="window.location.href='medicalfacilities.html'">Medical Facilities</li>
-                     <li onclick="window.location.href='media.html'">Media</li>
-                </ul>
-            
+        <div class="sidebar">
+            <div class="btn-close" onclick="toggle()">
+                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
             </div>
-            <button class="btn btn-primary btn-blue-top" onclick="window.location.href='package.html'">Join as a Member</button>
-            <div class="user-acc">
-                <button class="btn-user " onclick="visible()"><img src="assets/user.png"  width="28px" height="28px" alt=""></button>
-                <div class="tooltipMenu" id="tooltipMenu">
+            <div class="sidebar-items">About Us</div>
+            <div class="sidebar-items">Medical Facilities</div>
+            <div class="sidebar-items">Media</div>
+        </div>
+
+        <div class="navbar px-0">
+            <div class="btn-bars fa-2x" onclick="toggle()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="logo" onclick="window.location.href='index.html'">
+                <img src="assets/logo.png" width="100px" height="auto" alt="logo">
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-items ">
                     <ul>
-                      <li onclick="window.location.href='account.html'">Account</li>
-                      <li>My Trips</li>
-                      <li>Coustomer Services</li>
-                      <li>Logout</li>
+                        <li onclick="window.location.href='package.html'">Info</li>
+                        <li onclick="window.location.href='medicalfacilities.html'">Medical Facilities</li>
+                        <li onclick="window.location.href='media.html'">Media</li>
                     </ul>
+
                 </div>
+                <button class="btn btn-primary btn-blue-top" onclick="window.location.href='package.html'">Join as a
+                    Member</button>
+                <div class="user-acc">
+                    <button class="btn-user " onclick="visible()"><img src="assets/user.png" width="28px" height="28px"
+                            alt=""></button>
+                    <div class="tooltipMenu" id="tooltipMenu">
+                        <ul>
+                            <li onclick="window.location.href='account.html'">Account</li>
+                            <li>My Trips</li>
+                            <li>Coustomer Services</li>
+                            <li>Logout</li>
+                        </ul>
+                    </div>
+                </div>
+                <!---------------------tooltip Menu Ends---------------------->
             </div>
-              <!---------------------tooltip Menu Ends---------------------->
+
+
         </div>
-
-
     </div>
-</div>  
 
 
 
-<div class="container my-5">
+    <div class="container my-5">
 
 
-<div class="row">
-    <div class="col-md-4 cols-sm-12">
+        <div class="row">
+            <div class="col-md-4 cols-sm-12">
 
-        <div class="user-card">
-            <div class="ribbon-bookmark-v">
-                <img style=" top: 6px; position: relative;" src="assets/Star.png" width="25px" alt="">
+                <div class="user-card">
+                    <div class="ribbon-bookmark-v">
+                        <img style=" top: 6px; position: relative;" src="assets/Star.png" width="25px" alt="">
 
-                <span style="font-size: 9px;text-shadow: 0px 2px 2px rgb(0 0 0 / 25%); font-weight: 900; text-align: center;">FAMILY</span>
+                        <span
+                            style="font-size: 9px;text-shadow: 0px 2px 2px rgb(0 0 0 / 25%); font-weight: 900; text-align: center;">FAMILY</span>
+                    </div>
+                    <div class="user-card-body">
+
+                        <div class="user-image">
+                            <img src="assets/account/userpic.png" width="124px" alt="">
+                        </div>
+
+                        <div class="user-name-tag">
+                            Savanna jacob
+                        </div>
+
+
+                        <div class="user-info">
+                            <ul>
+                                <li>(671) 575-2221 </li>
+                                <li>chambers@gmail.com</li>
+                                <li>2972 Westheimer Rd. Santa Ana, Illinois 85486</li>
+                            </ul>
+                        </div>
+
+                        <button class="user-edit-btn">
+                            <img src="assets/account/pencil.png" width="12px" alt="">
+                        </button>
+
+
+                        <button class="btn-chg-pass" data-toggle="modal" data-target="#password">Change Password</button>
+
+                    </div>
+                </div>
+
+
             </div>
-            <div class="user-card-body">
-
-                <div class="user-image">
-                    <img  src="assets/account/userpic.png" width="124px" alt="">
-                </div>
-
-                <div class="user-name-tag">
-                    Savanna jacob
-                </div>
+            <div class="col-md-8 cols-sm-12">
+                <div class="user-card">
+                    <div class="user-card-body">
 
 
-                <div class="user-info">
-                    <ul>
-                        <li>(671) 575-2221 </li>
-                        <li>chambers@gmail.com</li>
-                        <li>2972 Westheimer Rd. Santa Ana, Illinois 85486</li>
-                    </ul>
-                </div>
+                        <ul class="nav nav-tabs user-tab">
+                            <li class="active"><a data-toggle="tab" href="#home">Travel History </a></li>
+                            <li><a data-toggle="tab" href="#menu1"> Payment History</a></li>
+                            <li><a data-toggle="tab" href="#menu2"> Membership</a></li>
 
-                    <button class="user-edit-btn">
-                        <img src="assets/account/pencil.png" width="12px" alt="">
-                    </button>
+                        </ul>
 
+                        <div class="tab-content">
 
-                    <button class="btn-chg-pass">Change Password</button>
+                            <div id="home" class="tab-pane fadein active">
+                                <div class="row my-3">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="travel-item">
+                                            <div class="row">
 
-            </div>
-        </div>
+                                                <div class="col-md-3">
+                                                    28
+                                                    <BR> MAY
+                                                </div>
 
+                                                <div class="col-md-8 travel-item-p2">
+                                                    <div id="borderLeft"></div>
+                                                    <span class="travel-item-dot-1"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+                                                    <br>
+                                                    <span class="travel-item-dot-2"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
 
-    </div>
-    <div class="col-md-8 cols-sm-12">
-        <div class="user-card">
-            <div class="user-card-body">
-
-
-                <ul class="nav nav-tabs user-tab">
-                    <li class="active"><a data-toggle="tab" href="#home">Travel History </a></li>
-                    <li><a data-toggle="tab" href="#menu1"> Payment History</a></li>
-                    <li><a data-toggle="tab" href="#menu2"> Membarship</a></li>
-                  
-                  </ul>
-                
-                    <div class="tab-content">
-
-                        <div id="home" class="tab-pane fadein active">
-                        <div class="row my-3">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="travel-item">
-                                    <div class="row">
-
-                                        <div class="col-md-3">
-                                            28
-                                          <BR> MAY
+                                                </div>
+                                            </div>
                                         </div>
-                                        
-                                        <div class="col-md-8 travel-item-p2">
-                                            <div id="borderLeft"></div>
-                                           <span class="travel-item-dot-1"></span> 
-                                           <span class="trip-place">W King Edward Ave </span>
-                                           <br>
-                                           <span class="trip-time">17:10</span>
-                                           <br>
-                                            <span class="travel-item-dot-2"></span> 
-                                            <span class="trip-place">W King Edward Ave </span>
-                                            <br>
-                                            <span class="trip-time">17:10</span>
-                                            
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="travel-item">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    24
+                                                    <BR> MAY
+                                                </div>
+
+                                                <div class="col-md-8 travel-item-p2">
+                                                    <div id="borderLeft"></div>
+                                                    <span class="travel-item-dot-1"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+                                                    <br>
+                                                    <span class="travel-item-dot-2"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+                                <div class="row my-3">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="travel-item">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    28
+                                                    <BR> MAY
+                                                </div>
+
+                                                <div class="col-md-8 travel-item-p2">
+                                                    <div id="borderLeft"></div>
+                                                    <span class="travel-item-dot-1"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+                                                    <br>
+                                                    <span class="travel-item-dot-2"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="travel-item">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    24
+                                                    <BR> MAY
+                                                </div>
+
+                                                <div class="col-md-8 travel-item-p2">
+                                                    <div id="borderLeft"></div>
+                                                    <span class="travel-item-dot-1"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+                                                    <br>
+                                                    <span class="travel-item-dot-2"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="row my-3">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="travel-item">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    28
+                                                    <BR> MAY
+                                                </div>
+
+                                                <div class="col-md-8 travel-item-p2">
+                                                    <div id="borderLeft"></div>
+                                                    <span class="travel-item-dot-1"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+                                                    <br>
+                                                    <span class="travel-item-dot-2"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="travel-item">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    24
+                                                    <BR> MAY
+                                                </div>
+
+                                                <div class="col-md-8 travel-item-p2">
+                                                    <div id="borderLeft"></div>
+                                                    <span class="travel-item-dot-1"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+                                                    <br>
+                                                    <span class="travel-item-dot-2"></span>
+                                                    <span class="trip-place">W King Edward Ave </span>
+                                                    <br>
+                                                    <span class="trip-time">17:10</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                             </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="travel-item">
-                                    <div class="row">
 
-                                        <div class="col-md-3">
-                                          24
-                                          <BR> MAY
-                                        </div>
-                                        
-                                        <div class="col-md-8 travel-item-p2">
-                                            <div id="borderLeft"></div>
-                                           <span class="travel-item-dot-1"></span> 
-                                           <span class="trip-place">W King Edward Ave </span>
-                                           <br>
-                                            <span class="trip-time">17:10</span>
-                                            <br>
-                                            <span class="travel-item-dot-2"></span>
-                                            <span class="trip-place">W King Edward Ave </span>
-                                             <br>
-                                            <span class="trip-time">17:10</span>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
+
+                            <!-- menu 2 ....................................................................................................................................................................... -->
+
+                            <div id="menu1" class="tab-pane fade">
+
+
+                                <table class="table user-table">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Amount</th>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                        <th></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>65234215</td>
+                                        <td>3500</td>
+                                        <td>12.12.2021</td>
+                                        <td>lorem ipsum meneha</td>
+                                        <td><button class="user-table-action-btn">Download invoice</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>65234215</td>
+                                        <td>3500</td>
+                                        <td>12.12.2021</td>
+                                        <td>lorem ipsum meneha</td>
+                                        <td><button class="user-table-action-btn">Download invoice</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>65234215</td>
+                                        <td>3500</td>
+                                        <td>12.12.2021</td>
+                                        <td>lorem ipsum meneha</td>
+                                        <td><button class="user-table-action-btn">Download invoice</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>65234215</td>
+                                        <td>3500</td>
+                                        <td>12.12.2021</td>
+                                        <td>lorem ipsum meneha</td>
+                                        <td><button class="user-table-action-btn">Download invoice</button></td>
+                                    </tr>
+
+
+                                </table>
+
+
+
+
+
                             </div>
-                        </div>
 
-                        
+                            <!-- ..........menu 3........ .........................................................................................................................................................-->
+                            <div id="menu2" class="tab-pane fade">
 
-                        <div class="row my-3">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="travel-item">
-                                    <div class="row">
 
-                                        <div class="col-md-3">
-                                            28
-                                          <BR> MAY
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 membership-card-outer">
+                                        <div class="membership-card">
+
+                                            <div class="membership-card-title">Esther Howard</div>
+                                            <button class="membership-card-edit-btn"><img
+                                                    src="assets/account/pencil.png" alt=""></button>
+
+                                            <div class="membership-card-body">
+                                                <div class="membership-card-circle-dot">
+                                                    <img src="assets/account/blood.png" width="9px" alt="">
+                                                </div>
+                                                <div class="membership-card-circle-dot-text">
+                                                    O +ve
+                                                </div>
+                                            </div>
+
+                                            <div class="membership-card-body">
+                                                <div class="membership-card-circle-dot">
+                                                    <img src="assets/account/hand.png" width="9px" alt="">
+                                                </div>
+                                                <div class="membership-card-circle-dot-text">
+                                                    allergy1, allergy2, allergy2,
+                                                </div>
+                                            </div>
+
+
                                         </div>
-                                        
-                                        <div class="col-md-8 travel-item-p2">
-                                            <div id="borderLeft"></div>
-                                           <span class="travel-item-dot-1"></span> 
-                                           <span class="trip-place">W King Edward Ave </span>
-                                           <br>
-                                           <span class="trip-time">17:10</span>
-                                           <br>
-                                            <span class="travel-item-dot-2"></span> 
-                                            <span class="trip-place">W King Edward Ave </span>
-                                            <br>
-                                            <span class="trip-time">17:10</span>
-                                            
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 membership-card-outer">
+
+                                        <div class="membership-card">
+
+                                            <div class="membership-card-title">Esther Howard</div>
+                                            <button class="membership-card-edit-btn"><img
+                                                    src="assets/account/pencil.png" alt=""></button>
+
+                                            <div class="membership-card-body">
+                                                <div class="membership-card-circle-dot">
+                                                    <img src="assets/account/blood.png" width="9px" alt="">
+                                                </div>
+                                                <div class="membership-card-circle-dot-text">
+                                                    O +ve
+                                                </div>
+                                            </div>
+
+                                            <div class="membership-card-body">
+                                                <div class="membership-card-circle-dot">
+                                                    <img src="assets/account/hand.png" width="9px" alt="">
+                                                </div>
+                                                <div class="membership-card-circle-dot-text">
+                                                    allergy1, allergy2, allergy2,
+                                                </div>
+                                            </div>
+
+
                                         </div>
+
+
+
+
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12 membership-card-outer">
+
+
+
+                                        <div class="membership-card addmember">
+
+                                            <button data-toggle="modal" data-target="#add" class="btn-add-mem">
+                                                +
+                                            </button>
+
+
+                                        </div>
+
+
+
                                     </div>
                                 </div>
+
+
+
                             </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="travel-item">
-                                    <div class="row">
-
-                                        <div class="col-md-3">
-                                          24
-                                          <BR> MAY
-                                        </div>
-                                        
-                                        <div class="col-md-8 travel-item-p2">
-                                            <div id="borderLeft"></div>
-                                           <span class="travel-item-dot-1"></span> 
-                                           <span class="trip-place">W King Edward Ave </span>
-                                           <br>
-                                            <span class="trip-time">17:10</span>
-                                            <br>
-                                            <span class="travel-item-dot-2"></span>
-                                            <span class="trip-place">W King Edward Ave </span>
-                                             <br>
-                                            <span class="trip-time">17:10</span>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
 
-
-
-
-                        <div class="row my-3">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="travel-item">
-                                    <div class="row">
-
-                                        <div class="col-md-3">
-                                            28
-                                          <BR> MAY
-                                        </div>
-                                        
-                                        <div class="col-md-8 travel-item-p2">
-                                            <div id="borderLeft"></div>
-                                           <span class="travel-item-dot-1"></span> 
-                                           <span class="trip-place">W King Edward Ave </span>
-                                           <br>
-                                           <span class="trip-time">17:10</span>
-                                           <br>
-                                            <span class="travel-item-dot-2"></span> 
-                                            <span class="trip-place">W King Edward Ave </span>
-                                            <br>
-                                            <span class="trip-time">17:10</span>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="travel-item">
-                                    <div class="row">
-
-                                        <div class="col-md-3">
-                                          24
-                                          <BR> MAY
-                                        </div>
-                                        
-                                        <div class="col-md-8 travel-item-p2">
-                                            <div id="borderLeft"></div>
-                                           <span class="travel-item-dot-1"></span> 
-                                           <span class="trip-place">W King Edward Ave </span>
-                                           <br>
-                                            <span class="trip-time">17:10</span>
-                                            <br>
-                                            <span class="travel-item-dot-2"></span>
-                                            <span class="trip-place">W King Edward Ave </span>
-                                             <br>
-                                            <span class="trip-time">17:10</span>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        </div>
-
-
-<!-- menu 2 ....................................................................................................................................................................... -->
-
-                        <div id="menu1" class="tab-pane fade">
-                        
-                        
-                            <table class="table user-table">
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Amount</th>
-                                    <th>Date</th>
-                                    <th>Description</th>
-                                    <th></th>
-                                </tr>
-
-                                <tr>
-                                    <td>65234215</td>
-                                    <td>3500</td>
-                                    <td>12.12.2021</td>
-                                    <td>lorem ipsum meneha</td>
-                                    <td><button class="user-table-action-btn">Download invoice</button></td>
-                                </tr>
-                                <tr>
-                                    <td>65234215</td>
-                                    <td>3500</td>
-                                    <td>12.12.2021</td>
-                                    <td>lorem ipsum meneha</td>
-                                    <td><button class="user-table-action-btn">Download invoice</button></td>
-                                </tr>
-                                <tr>
-                                    <td>65234215</td>
-                                    <td>3500</td>
-                                    <td>12.12.2021</td>
-                                    <td>lorem ipsum meneha</td>
-                                    <td><button class="user-table-action-btn">Download invoice</button></td>
-                                </tr>
-                                <tr>
-                                    <td>65234215</td>
-                                    <td>3500</td>
-                                    <td>12.12.2021</td>
-                                    <td>lorem ipsum meneha</td>
-                                    <td><button class="user-table-action-btn">Download invoice</button></td>
-                                </tr>
-
-
-                            </table>
-                        
-                        
-                        
-                        
-                        
-                        </div>
-
- <!-- ..........menu 3........ .........................................................................................................................................................-->
-                        <div id="menu2" class="tab-pane fade">
-                        
-
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12 membership-card-outer">
-                                    <div class="membership-card">
-
-                                        <div class="membership-card-title">Esther Howard</div>
-                                        <button class="membership-card-edit-btn"><img src="assets/account/pencil.png" alt=""></button>
-
-                                        <div class="membership-card-body">
-                                            <div class="membership-card-circle-dot">
-                                                <img src="assets/account/blood.png"   width="9px" alt="">
-                                            </div>
-                                            <div class="membership-card-circle-dot-text">
-                                                O +ve
-                                            </div>
-                                        </div>
-
-                                        <div class="membership-card-body">
-                                            <div class="membership-card-circle-dot">
-                                                <img src="assets/account/hand.png"     width="9px" alt="">
-                                            </div>
-                                            <div class="membership-card-circle-dot-text">
-                                                allergy1, allergy2, allergy2,
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-                                <div class="col-md-4 col-sm-12 membership-card-outer">
-
-                                    <div class="membership-card">
-
-                                        <div class="membership-card-title">Esther Howard</div>
-                                        <button class="membership-card-edit-btn"><img src="assets/account/pencil.png" alt=""></button>
-
-                                        <div class="membership-card-body">
-                                            <div class="membership-card-circle-dot">
-                                                <img src="assets/account/blood.png"   width="9px" alt="">
-                                            </div>
-                                            <div class="membership-card-circle-dot-text">
-                                                O +ve
-                                            </div>
-                                        </div>
-
-                                        <div class="membership-card-body">
-                                            <div class="membership-card-circle-dot">
-                                                <img src="assets/account/hand.png"     width="9px" alt="">
-                                            </div>
-                                            <div class="membership-card-circle-dot-text">
-                                                allergy1, allergy2, allergy2,
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-
-
-
-                                </div>
-
-                                <div class="col-md-4 col-sm-12 membership-card-outer">
-
-
-
-                                    <div class="membership-card addmember">
-
-                                        <button data-toggle="modal" data-target="#add" class="btn-add-mem">
-                                            +
-                                        </button>
-
-
-                                    </div>
-
-
-
-                                </div>
-                            </div>
-                        
-                        
-                        
                         </div>
 
 
                     </div>
 
 
-             </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
-         </div>
-         </div>       
+
 
     </div>
-</div>
-
-
-
-
-
-</div>
 
 
 
@@ -497,63 +509,64 @@
 
 
 
-<div class="container  s4-foot">
+    <div class="container  s4-foot">
 
-    <div class="row">
-        <div class="col-lg-3">
-            <img src="assets/logo.png" width="100px" height="auto" alt="logo">
-           
-            <p class="mt-3" style="line-height: 25px;">
-                Experience since 1984 means you are given quality care. Without incident by the licensed air carriers we utilize, we arrange safe and expert care around the world….
-            </p>
-        </div>
-        <div class="col-lg-3">
-            <h5>Info Links</h5>
-             <ul>
-                <li onclick="window.location.href='index.html'">Home</li>
-                <li onclick="window.location.href='about.html'">Info</li>
-                <li onclick="window.location.href='medicalfacilities.html'">Medical Fecilities</li>
-                 <li onclick="window.location.href='media.html'">Media</li>
-    
-            </ul>
-        </div>
-        <div class="col-lg-3">
-            <h5>Services</h5>
-            <ul>
-                <li>Medical</li>
-                <li>In the Air</li>
-                <li>Aircraft</li>
-            </ul>
-        </div>
-        <div class="col-lg-3 contact">
-            <h5>Contact us</h5>
-            <ul>
-                  <li>6538 Collins Ave #277 Miami Beach, FL 33141-4694</li>
+        <div class="row">
+            <div class="col-lg-3">
+                <img src="assets/logo.png" width="100px" height="auto" alt="logo">
+
+                <p class="mt-3" style="line-height: 25px;">
+                    Experience since 1984 means you are given quality care. Without incident by the licensed air
+                    carriers we utilize, we arrange safe and expert care around the world….
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <h5>Info Links</h5>
+                <ul>
+                    <li onclick="window.location.href='index.html'">Home</li>
+                    <li onclick="window.location.href='about.html'">Info</li>
+                    <li onclick="window.location.href='medicalfacilities.html'">Medical Fecilities</li>
+                    <li onclick="window.location.href='media.html'">Media</li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Services</h5>
+                <ul>
+                    <li>Medical</li>
+                    <li>In the Air</li>
+                    <li>Aircraft</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 contact">
+                <h5>Contact us</h5>
+                <ul>
+                    <li>6538 Collins Ave #277 Miami Beach, FL 33141-4694</li>
                     <li>info@airambulance.net</li>
-                   <li>1-800-827-0745</li>
-            </ul>
+                    <li>1-800-827-0745</li>
+                </ul>
+            </div>
         </div>
+
+
+
     </div>
 
 
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                Copyright © 2021 Air care. All Rights Reserved.
+            </div>
+            <div class="col-md-6 col-sm-12 social">
+                <span class="ico"><i class="fa fa-facebook-official" aria-hidden="true"></i></span>
+                <span class="ico"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span class="ico"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                <span class="ico"><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
 
-</div>
-
-
-<div class="container my-3">
-    <div class="row">
-        <div class="col-md-6 col-sm-12">
-            Copyright © 2021 Air care. All Rights Reserved.
-        </div>
-        <div class="col-md-6 col-sm-12 social">
-            <span class="ico"><i class="fa fa-facebook-official" aria-hidden="true"></i></span>
-            <span class="ico"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-            <span class="ico"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-            <span class="ico"><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-
+            </div>
         </div>
     </div>
-</div>
 
 
 
@@ -563,200 +576,236 @@
 <!-- ............................................... Book modal starts here....................................................................................... -->
 <div class="modal" id="book">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title m-title">BOOK NOW</h4>
-         
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body bookform">
-            <form action="">
+        <div class="modal-content" style="margin-top:20%;">
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title m-title">BOOK NOW</h4>
 
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="name" id="">
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body bookform">
+                <form action="">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="name" id="">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="number" name="name" placeholder="contact number" id="">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="number" name="name" placeholder="contact number" id="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="email" id="">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="email" id="">
+
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Parent name" id="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Medical Conditions (If any)" id="">
+                            </div>
                         </div>
                     </div>
-                </div>
 
 
 
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Parent name" id="">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Medical  Allergies" id="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Blood Group" id="">
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="email" placeholder="Medical Conditions (If any)" id="">
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input type="text" name="name"
+                                    placeholder="Next of kin / Responsible party : Contact number" id="">
+                            </div>
                         </div>
                     </div>
-                </div>
 
 
-
-
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Medical  Allergies" id="">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Pick up point" id="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Drop Off" id="">
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="email" placeholder="Blood Group" id="">
-                        </div>
-                    </div>
-                </div>
 
+                    <button class="btn-book" type="submit">BOOK NOW</button>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Next of kin / Responsible party : Contact number" id="">
-                        </div>
-                    </div>
-                </div>
+                </form>
+            </div>
 
-
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Pick up point" id="">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="email" placeholder="Drop Off" id="">
-                        </div>
-                    </div>
-                </div>
-
-                <button class="btn-book" type="submit">BOOK NOW</button>
-
-            </form>
-        </div>
-  
-        <!-- Modal footer -->
-        <!-- <div class="modal-footer">
+            <!-- Modal footer -->
+            <!-- <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div> -->
-  
-      </div>
+
+        </div>
     </div>
-  </div>
+</div>
 <!-- ......................................................... .Book modal ends her............... ....................................................................-->
 
 
 
 <div class="modal" id="add">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content" style="margin-top: 12%;">
-        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title m-title">ADD NEW MEMBER</h4>
-         
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body bookform">
-            <form action="">
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="name" id="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select name="" id="">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+        <div class="modal-content" style="margin-top: 20%;">
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title m-title">ADD NEW MEMBER</h4>
 
-                
-                <div class="row">
-                   
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select name="" id="">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Other">Other</option>
-                            </select>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body bookform">
+                <form action="">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="name" id="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <select name="" id="">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Medical Conditions " id="">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <select name="" id="">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Medical Conditions " id="">
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                  
-
-               
 
 
 
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Medical  Allergies" id="">
+
+
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Medical  Allergies" id="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Blood Group" id="">
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="email" placeholder="Blood Group" id="">
-                        </div>
-                    </div>
-                </div>
 
 
-              
 
-                <button class="btn-book" type="submit">Update</button>
 
-            </form>
-        </div>
-  
-        <!-- Modal footer -->
-        <!-- <div class="modal-footer">
+                    <button class="btn-book" type="submit">Update</button>
+
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <!-- <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div> -->
-  
-      </div>
+
+        </div>
     </div>
-  </div>
+</div>
 <!-- ......................................................... .Book modal ends her............... ....................................................................-->
 
+<div class="modal" id="password">
+    <div class="modal-dialog">
+        <div class="modal-content" style="margin-top:30%;">
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title m-title" >Change Password</h4>
+
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body bookform">
+                <form action="">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Enter password" id="">
+                            </div>
+                        </div>
+                    </div>
 
 
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="number" name="name" placeholder="Enter password" id="">
+                            </div>
+                        </div>
+                        
+                    </div>
 
+                    <button class="btn-book" type="submit">Change Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
